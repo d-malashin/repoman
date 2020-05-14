@@ -10,7 +10,7 @@ $dark-brown: #333333;
 $xsmall: 400px;
 $small: 600px;
 $medium: 800px;
-$large: 1200px;
+$large: 1280px;
 $xlarge: 1440px;
 
 // Global styles
@@ -52,6 +52,13 @@ h2 {
 
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width:$large) {
+    width: $large;
+  }
+  @media screen and (max-width:$medium) {
+    width: $medium;
+  }
 }
 
 // Imports
