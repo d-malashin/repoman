@@ -1,0 +1,61 @@
+.skills {
+  padding-top: 9.3rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background: $light-bege;
+
+  &__columns {
+    margin: 8.6rem 0 14.5rem 16.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__heading {
+    margin: 0 121.2rem 0 16.5rem;
+
+font-weight: bold;
+font-size: 2.4rem;
+line-height: 2.9rem;
+color: $dark-brown;
+
+  }
+
+  &__photo {
+
+    max-width: 38.5rem;
+    content: url("./assets/img/Profile-Picture.jpg");
+  }
+}
+
+.info {
+  margin-left: 20rem;
+
+  &__text {
+    &--profile {
+      margin-bottom: 3.5rem;
+    }
+    &--tools {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+    }
+  }
+  &__key {
+    display: inline-block;
+    width: 5rem;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: $dark-brown;
+  }
+
+  &__value {
+    margin-left: 10rem;
+    font-size: 1.8rem;
+    color: $dark-brown;
+  }
+}
