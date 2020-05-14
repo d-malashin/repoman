@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
@@ -65,7 +66,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/images",
+              outputPath: "assets/img/",
               useRelativePath: true,
             },
           },
@@ -80,14 +81,11 @@ module.exports = {
                 enabled: true,
               },
               pngquant: {
-                quality: "65-90",
+                quality: [0.65, 0.9],
                 speed: 4,
               },
               gifsicle: {
                 interlaced: false,
-              },
-              webp: {
-                quality: 75,
               },
             },
           },
@@ -96,7 +94,7 @@ module.exports = {
     ],
   },
   plugins: [
-    /** Since Webpack 4 */
+    /** Since Webpack 4 */  
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {},
@@ -106,6 +104,8 @@ module.exports = {
       filename: "[name]-styles.css",
       chunkFilename: "[id].css",
     }),
+    
+    new CleanWebpackPlugin(),
 
     new HtmlWebpackPlugin({
       title: "Denis Malashin | Front-end engineer",

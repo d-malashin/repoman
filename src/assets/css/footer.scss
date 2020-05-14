@@ -1,0 +1,30 @@
+.footer {
+  background-color: $light-bege;
+  &__heading {
+    margin: 9.3rem 0 0 16.5rem;
+  }
+  &__links-menu {
+    margin: 0 auto;
+    margin-top: 5.1rem;
+    margin-bottom: 18.9rem;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.links-menu {
+  padding: 0;
+  list-style: none;
+  &__link {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: $dark-brown;
+}

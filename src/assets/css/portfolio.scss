@@ -1,0 +1,82 @@
+.portfolio {
+  padding-bottom: 10rem;
+  &__heading {
+    margin: 9.3rem 0 7rem 16.5rem;
+  }
+  &__slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__info {
+    margin: 0 0 0 10rem;
+  }
+  &__subheading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: $dark-brown;
+  }
+  &__text {
+    margin-top: 4.8rem;
+
+    max-width: 48rem;
+
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    text-align: justify;
+    color: $dark-brown;
+  }
+}
+
+.gallery {
+  margin: 0 2rem 0 5rem;
+
+  width: 35%;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  // overflow: hidden;
+
+  &__link {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    flex: 1 1 40%;
+
+    &--simpleLandingPage {
+      img {
+        content: url("./assets/img/portfolio_thumbnail_1.png");
+      }
+    }
+    &--mediumLikeApp {
+      img {
+        content: url("./assets/img/portfolio_thumbnail_app_1.png");
+      }
+    }
+    &--todoList {
+      img {
+        content: url("./assets/img/portfolio_thumbnail_app_2.png");
+      }
+    }
+    img {
+      width: 80%;
+      border: 2px solid #dadada;
+      border-radius: 7px;
+    }
+  }
+}
+
+.glide {
+  &__arrow {
+    color: black;
+  }
+}
