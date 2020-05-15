@@ -1,0 +1,25 @@
+.about {
+  &__heading {
+    display: block;
+
+    margin: 9.3rem 120.2rem 0 16.5rem;
+    @media screen and (max-width: $small) {
+      margin: 2.5rem auto;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 7.6rem 11.5%;
+    margin-bottom: 4.5rem;
+
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: justify;
+    color: $dark-brown;
+    &:last-child {
+      margin: 0 11.5%;
+      margin-bottom: 11.5rem;
+    }
+  }
+}

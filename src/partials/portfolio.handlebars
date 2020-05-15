@@ -1,18 +1,50 @@
 <section class="portfolio">
   <h2 class="portfolio__heading">Portfolio</h2>
-  <div class="portfolio__info">
-    <p class="portfolio__subheading">UX Research</h2>
-    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus
-      id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
-  </div>
-  <div class="portfolio__slider slider">
-    <div class="slider__slide">
-      <a href="https://d-malashin.github.io/simple-landing-page/">
-        <img src="../assets/img/thumbnails/portfolio_thumbnail_1.png" alt="">
-      </a>
-      <a href="https://d-malashin.github.io/simple-landing-page/">
-        <img src="../assets/img/thumbnails/portfolio_thumbnail_1.png" alt="">
-      </a>
+
+  <div class="portfolio__slider glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="portfolio__slides slides glide__slides">
+        <li class="slides__slide slide glide__slide">
+          <div class="slide__info">
+            <p class="slide__subheading">Web sites</h2>
+            <p class="slide__text">I develop web-sites with your layouts - figma, psd, zeplin. If you don't have
+              one, I can make site from scratch by small brief from you.</p>
+            <p class="slide__text">Mobile-first, desktop-first, static, responsive - I develop any of them.</p>
+          </div>
+          <div class="slide__gallery gallery">
+            <a class="gallery__link gallery__link--simpleLandingPage" href="https://d-malashin.github.io/simple-landing-page/">
+              <img src="../assets/img/portfolio_thumbnail_1.png" alt="image">
+            </a>
+            <a class="gallery__link gallery__link--simpleLandingPage" href="https://d-malashin.github.io/simple-landing-page/">
+              <img src="../assets/img/portfolio_thumbnail_1.png" alt="image">
+            </a>
+            {{!-- <a class="gallery__link" href="https://d-malashin.github.io/simple-landing-page/">
+              <img src="../assets/img/thumbnails/portfolio_thumbnail_1.png" alt="image">
+            </a>
+            <a class="gallery__link" href="https://d-malashin.github.io/simple-landing-page/">
+              <img src="../assets/img/thumbnails/portfolio_thumbnail_1.png" alt="image">
+            </a> --}}
+          </div>
+        </li>
+        <li class="slider__slide slide glide__slide">
+          <div class="slide__info">
+            <p class="slide__subheading">Web apps</h2>
+            <p class="slide__text">I develop SPA and any other kind of web apps. I use React.js, Vue and pure JS.</p>
+          </div>
+          <div class="slide__gallery gallery">
+            <a class="gallery__link gallery__link--mediumLikeApp" href="https://d-malashin.github.io/medium-like-app/">
+              <img src="../assets/img/portfolio_thumbnail_app_1.png" alt="image">
+            </a>
+            <a class="gallery__link gallery__link--todoList" href="https://d-malashin.github.io/todo-list/">
+              <img src="../assets/img/portfolio_thumbnail_app_2.png" alt="image">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Back</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
     </div>
   </div>
 </section>

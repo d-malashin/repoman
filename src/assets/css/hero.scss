@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+
+  background: url("./assets/img/Background.jpg") rgba(198, 108, 73, 0.4)
+    no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  &__menu {
+    margin: 9.3rem auto;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $small) {
+      margin-bottom: 0;
+    }
+  }
+  &__heading {
+    margin: 14.5rem 58.1rem 0 16.5rem;
+
+    font-size: 6.4rem;
+    line-height: 7.8rem;
+    font-weight: normal;
+    color: #ffffff;
+
+    @media screen and (max-width: $small) {
+      margin: 0;
+      margin-top: 5rem;
+
+      font-size: 2rem;
+      line-height: 2.4rem;
+      text-align: center;
+    }
+  }
+  &__subheading {
+    margin: 2.6rem 94.2rem 0 16.5rem;
+
+    font-family: Libre Franklin;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #ffffff;
+    @media screen and (max-width: $small) {
+      margin: 0;
+      margin-top: 1.3rem;
+
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      text-align: center;
+    }
+  }
+  &__link {
+    display: block;
+
+    margin: 10.6rem 116.5rem 24rem 16.5rem;
+
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+    @media screen and (max-width: $small) {
+      margin: 0;
+      margin: 4.1rem;
+
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      text-align: center;
+    }
+  }
+}
+
+.menu {
+  &__logo {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #ffffff;
+
+    @media screen and (max-width: $small) {
+      margin: 0 auto;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    list-style: none;
+
+    @media screen and (max-width: $small) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-right: 6rem;
+
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+
+    &:first-child {
+      font-weight: bold;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
