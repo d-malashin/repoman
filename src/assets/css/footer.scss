@@ -2,6 +2,13 @@
   background-color: $light-bege;
   &__heading {
     margin: 9.3rem 0 0 16.5rem;
+    @media screen and (max-width: $small) {
+      margin: 2.5rem 0;
+
+      font-size: 2rem;
+      line-height: 2.4rem;
+      text-align: center;
+    }
   }
   &__links-menu {
     margin: 0 auto;
@@ -10,7 +17,12 @@
     width: 80%;
 
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
+
+    @media screen and (max-width: $small) {
+      margin: 0 4.2rem;
+    }
   }
 }
 
@@ -19,6 +31,9 @@
   list-style: none;
   &__link {
     margin-bottom: 1.4rem;
+  }
+  @media screen and (max-width: $small) {
+    flex: 1 1 40%;
   }
 }
 
