@@ -2,7 +2,7 @@
   &__heading {
     display: block;
 
-    margin: 9.3rem 100.2rem 0 16.5rem;
+    margin: 9.3rem 0 0 16.5rem;
     @media screen and (max-width: $small) {
       margin: 2.5rem auto;
       text-align: center;
@@ -10,7 +10,7 @@
   }
 
   &__text {
-    margin: 7.6rem 11.5%;
+    margin: 7.6rem 16.5rem;
     margin-bottom: 4.5rem;
 
     font-size: 1.8rem;
@@ -18,7 +18,7 @@
     text-align: justify;
     color: $dark-brown;
     &:last-child {
-      margin: 0 11.5%;
+      margin: 0 16.5rem;
       margin-bottom: 11.5rem;
     }
   }
