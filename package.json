@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./build/webpack.config.js --watch",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Denis Malashin",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "handlebars": "^4.7.6",
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^4.3.0",
