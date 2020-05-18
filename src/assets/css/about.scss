@@ -17,9 +17,15 @@
     line-height: 3rem;
     text-align: justify;
     color: $dark-brown;
+    @media screen and (max-width: $medium) {
+      margin: 7.6rem 2.5rem;
+    }
     &:last-child {
       margin: 0 16.5rem;
       margin-bottom: 11.5rem;
+      @media screen and (max-width: $medium) {
+        margin: 7.6rem 2.5rem;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
   background-size: cover;
 
   &__menu {
-    margin: 9.3rem auto;
+    margin: 0 auto;
     width: 80%;
 
     display: flex;
@@ -72,6 +72,13 @@
 }
 
 .menu {
+  &__language-selector {
+    margin: 1% 0 1% 85%;
+    @media screen and (min-width: $medium) {
+    margin: 1% 0 1% 90%;
+      
+    }
+  }
   &__logo {
     font-weight: bold;
     font-size: 2.4rem;
@@ -96,7 +103,7 @@
   }
 
   &__item {
-    margin-right: 6rem;
+    margin-right: 4rem;
 
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -106,9 +113,9 @@
       font-weight: bold;
     }
 
-    &:last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
   &__link {
     text-decoration: none;
