@@ -26,6 +26,9 @@ document
 document
   .querySelector("#contactLink")
   .addEventListener("click", (e) => smoothScrolling(e, "#contact"));
+  document
+  .querySelector("#headerLink")
+  .addEventListener("click", (e) => smoothScrolling(e, "#portfolio"));
 
 
 // Language switcher
