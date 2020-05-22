@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://d-malashin.github.io/repoman",
   "scripts": {
     "start": "webpack-dev-server --config ./build/webpack.config.js --watch",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js --mode=production",
